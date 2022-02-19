@@ -1,0 +1,362 @@
+$color-main: #171717;
+$color-light: #ffffff;
+$color-element: #ee5253;
+$font-text: "Josefin Sans", sans-serif;
+$font-header: "Open Sans", sans-serif;
+$font-button: "Open Sans", sans-serif;
+
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.row::before,
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 20px;
+  line-height: 1.7;
+  font-family: $font-text;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+section {
+  padding: 108px 0;
+}
+.section-title {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+  font-family: $font-header;
+}
+.about .container {
+  color: $color-light;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $color-element;
+}
+.hobby {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+  font-family: $font-header;
+}
+.hobby::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $color-element;
+}
+.portfolio {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+  font-family: $font-header;
+}
+.portfolio::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $color-element;
+}
+.contact-title {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+  font-family: $font-header;
+  color: $color-light;
+}
+.contact-title::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $color-element;
+}
+
+footer {
+  text-align: center;
+  background-color: #3d3d3d;
+  color: $color-light;
+  padding: 10px;
+  font-family: $font-header;
+  font-size: 12px;
+}
+
+/* HEADER section */
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.logo {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.page-title {
+    color: $color-light;
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    position: relative;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 0px 15px black;
+    font-family: $font-header;
+  }
+  .page-title::after {
+    position: absolute;
+    content: "";
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: $color-main;
+  }
+
+  .page-subtitle {
+    color: $color-light;
+    font-size: 24px;
+    margin: 48px 0 0 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 0px 15px black;
+  }
+/* Intro */
+.intro {
+    background: $color-light;
+  }
+  .intro p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0;
+    font-size: 24px;
+    border-top: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+  }
+  /*About*/
+  .about {
+    background: $color-main;
+  }
+
+  .fiver {
+      text-decoration: underline;
+      color: $color-light;
+  }
+
+  .list {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+  }
+
+  /* SKILLS */
+
+  /*Skills*/
+[class^="skill-"] {
+    position: relative;
+  }
+  .skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+  }
+  .skill-image img:hover {
+    transform: scale(1.2);
+  }
+  .skill-right .skill-image {
+    right: 0;
+  }
+  .skill-right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+  }
+  .skill-left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+  }
+  /*Gallery*/
+  .row {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .col {
+    background-size: 100%;
+    position: relative;
+    float: left;
+    width: 33.3333%;
+    height: 300px;
+  }
+  .col:hover {
+    background-color: #333;
+    background-blend-mode: overlay;
+    color: #fff;
+  }
+  .img1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/39671/physiotherapy-weight-training-dumbbell-exercise-balls-39671.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  .img2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  .img3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/789555/pexels-photo-789555.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  .img4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  .img5 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/3944311/pexels-photo-3944311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  .img6 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  .picture-title {
+    display: none;
+    font-size: 24px;
+    color: $color-light;
+    font-family: $font-header;
+    text-shadow: 0px 0px 10px black;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .picture-button {
+    display: none;
+    border: none;
+    font-size: 16px;
+    font: $font-header;
+    color: $color-light;
+    border-radius: 10px;
+    background: $color-main;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gallery-button {
+    margin: 50px;
+    font-size: 20px;
+    font: $font-text;
+    border-color: none;
+    background: $color-main;
+    color: $color-light;
+    height: 50px;
+    width: 150px;
+  }
+  .col:hover .picture-title,
+  .col:hover .picture-button {
+    display: block;
+    cursor: pointer;
+  }
+  /*Contact*/
+  .contact {
+    background: $color-main;
+    width: auto;
+    position: relative;
+  }
+  .contact-title {
+      color: $color-light;
+  }
+  .mail-form {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  input {
+    height: 50px;
+    width: 600px;
+    margin: 10px;
+    padding: 10px;
+    font-family: $font-text;
+    font-size: 20px;
+  }
+  textarea {
+    margin: 10px;
+    height: 200px;
+    width: 600px;
+    padding: 20px 10px;
+    font-family: $font-text;
+    font-size: 20px;
+  }
+  .submit-btn {
+    height: 50px;
+    width: 100px;
+    border: none;
+    background: $color-light;
+    color: $color-main;
+    font-family: $font-header;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  

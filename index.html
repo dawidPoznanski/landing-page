@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawid Poznanski</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="splash">
+        <div class="splash-inner">
+            <img class="logo" src="/img/logo.png" alt="logo">
+            <h1 class="page-title">Dawid Poznański</h1>
+            <h2 class="page-subtitle">Cześć 👋 jestem początkującym Frontend Developerem 🧑‍💻</h2>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <p>Zapraszam do współpracy🦾</p>
+        </div>
+    </section>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">O Mnie.</h2>
+                <p>Nazywam się Dawid i od niedawna podjąłem się pracy Frontend Developera.<br> W 2021 roku ukończyłem bootcamp Web Developera. <br> Wraz z przyjaciółmi założyliśmy mały zespół, który tworzy landing pages i Single Page Aplication (SPA) wiecej info pod <a class="fiver" href="https://www.fiverr.com/share/YmL62Q">linkiem</a> <br> Technologie z którymi mam styczność na codzień to: </p>
+                <p class="list">✅ HTML5 <br>✅ CSS3 <br>✅ JavaScriptES6 <br>✅ BOOTSTRAP <br>✅  React</p>
+            </div>
+        </section>
+        <section class="skills">
+            <h2 class="hobby">Czym się interesuje?</h2>
+            <div class="container">
+                
+                <article class="skill-left">
+                    <div class="skill-image">
+                        <img src="/img/IMG_4757.jpeg" alt="Ja w górach"  />
+                    </div>
+                    <div class="skill-description">
+                        <h3 class="skill-title">Podróże</h3>
+                        <p>Uwielbiam podróżować w różne miejsca. Nie ważne czy jestem tam po raz pierwszy czy któryś z rzędu. Najważniejsze jest to z kim jade w podróż, ponieważ z dobrą paczką przyjaciół będą najlepsze wspomnienia :)</p>
+                    </div>
+                </article>
+                <article class="skill-right">
+                    <div class="skill-image">
+                        <img src="https://images.pexels.com/photos/3585011/pexels-photo-3585011.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Komputer ze filmami do edycji" />
+                    </div>
+                    <div class="skill-description">
+                        <h3 class="skill-title">Filmowanie</h3>
+                        <p>Podczas wypadów na miasto lub innych podróży warto uwiecznić niektóre momenty. Niektórzy preferują piękne zdjęcia, natomiast ja wole sam stworzyc swój film z wakacji. Dzięki temu moge wrócić pamięcią do cudownych podróży i cieszyć się nimi za każdym razem na nowo.</p>
+                    </div>
+                </article>
+                <article class="skill-left">
+                    <div class="skill-image">
+                        <img src="https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Zdjęcie ukazuje chłopaka w goglach VR" />
+                    </div>
+                    <div class="skill-description">
+                        <h3 class="skill-title">Wirtualna rzeczywistość</h3>
+                        <p>Wirtualna rzeczywistość jest nową technologią, która polega na tworzeniu wirtualnego świata w oparciu o realny. Tą technologie mozemy spotkać nie tylko w grach wideo ale również w przemyśle i medycynie.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!--  
+    <section class="gallery">
+            <h2 class="portfolio">Galeria</h2>
+            <div class="row">
+                <div class="col img1">
+                    <h4 class="picture-title">Ćwiczenia</h4>
+                    <button class="picture-button">Kliknij tutaj</button>
+                </div>
+                <div class="col img2">
+                    <h4 class="picture-title">Programowanie</h4>
+                    <button class="picture-button">Kliknij tutaj</button>
+                </div>
+                <div class="col img3">
+                    <h4 class="picture-title">Podróże</h4>
+                    <button class="picture-button">Kliknij tutaj</button>
+                </div>
+                <div class="col img4">
+                    <h4 class="picture-title">Miasto</h4> 
+                    <button class="picture-button">Kliknij tutaj</button>   
+                </div>
+                <div class="col img5">
+                    <h4 class="picture-title">Jedzenie</h4>
+                    <button class="picture-button">Kliknij tutaj</button>
+                </div>
+                <div class="col img6">
+                    <h4 class="picture-title">Technologia</h4>
+                    <button class="picture-button">Kliknij tutaj</button>
+                </div>
+                <button class="gallery-button">Zobacz więcej</button>
+            </div>
+        </section>
+    -->
+        <section class="contact">
+            <h2 class="contact-title">Kontakt</h2>
+            <form class="mail-form" action="dawid.poznanski@outlook.com" method="post" enctype="text/plain">
+                <input type="text" id="name" name="name" placeholder="Twoje imię" minlength="3"> <br>
+                <input type="email" id="email" name="email" placeholder="Twój e-mail" required><br>
+                <input type="text" id="subject" name="subject" placeholder="Temat"><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Tutaj wpisz treść wiadomości" maxlength="1000"></textarea><br>
+                <input class="submit-btn" type="submit" value="Wyślij"><br>
+              </form>
+        </section>
+        <footer class="page-footer">
+            <div id="container">
+            <p>	&#169;Dawid Poznański. Wszelkie prawa zastrzeżone</p>
+            </div>
+          </footer>
+</body>
+</html>
